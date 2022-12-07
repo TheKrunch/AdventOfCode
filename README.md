@@ -26,4 +26,3 @@
               |`````|
               \_____/
 
-https://adventofcode.com/
