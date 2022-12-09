@@ -1,5 +1,6 @@
 input = open('input.txt', 'r')
 lines = input.readlines()
+input.close()
 
 countContain = 0
 countOverlap = 0
@@ -20,8 +21,6 @@ for line in lines:
     
     if a >= c and a <= d or b >= c and b <= d or c >= a and c <= b or d >= a and d <= b:
         countOverlap = countOverlap + 1
-
-input.close()
 
 print("Ranges contained in the other: " + str(countContain))
 print("Ranges that overlap: " + str(countOverlap))

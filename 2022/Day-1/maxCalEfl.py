@@ -1,5 +1,6 @@
 input = open('input.txt', 'r')
 lines = input.readlines()
+input.close()
 
 currentElf = 0
 elves = dict()
@@ -13,8 +14,6 @@ for line in lines:
 
     else:
         elves[currentElf] = int(line.strip())
-
-input.close()
 
 calList = list(elves.values())
 calList.sort(reverse = True)

@@ -1,5 +1,6 @@
 input = open('input.txt', 'r')
 lines = input.readlines()
+input.close()
 
 sum = 0
 badgeSum = 0
@@ -51,8 +52,6 @@ for line in lines:
             badgeSum = badgeSum + badge - 96
             
     elfNum = elfNum + 1
-
-input.close()
 
 print("Duplicate Item Sum: " + str(sum))
 print("Badges Sum: " + str(badgeSum))

@@ -24,6 +24,7 @@ output = ""
 
 input = open('input.txt', 'r')
 lines = input.readlines()
+input.close()
 
 for line in lines:
     cleaned = line.strip().split(' ')
@@ -36,8 +37,6 @@ for line in lines:
 
     for x in range(numToMove):
         stackList[stackTarget].append(stackList[stackSource].pop())
-
-input.close()
 
 for stack in stackList:
     output = output + (stack[-1])
